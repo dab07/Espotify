@@ -1,5 +1,6 @@
 import '../css/App.css'
 const Blog = () => {
+    console.log("Blog is rendered")
     return (
         <div className="blogs">
             <div className="image">

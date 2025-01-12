@@ -1,25 +1,12 @@
-import './css/App.css';
-import Blog from './Components/Blogs';
-import React from "react";
+import { View } from 'react-native';
 import Headers from "./Components/Headers";
-import Login from './Components/Login';
-import Register from './Components/Register';
-import {NativeRouter, Route, Routes} from 'react-router-native';
+import Blogs from "./Components/Blogs";
 
-const App: React.FC = () => {
+export default function App () {
     return (
-        <NativeRouter>
-            <div className="main">
-                <Headers />
-                <Routes>
-                    <Route path="/" element={<Blog />} />
-                    <Route path="/login" element={<Login />} />
-                    <Route path="/register" element={<Register />} />
-                </Routes>
-                <Blog/>
-            </div>
-        </NativeRouter>
+        <div className="main">
+           <Headers/>
+            <Blogs/>
+        </div>
     );
-};
-
-export default App;
+}
