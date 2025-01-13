@@ -11,7 +11,7 @@ const Headers = () => {
                     <Text>myBlog</Text>
                 </Pressable>
             </Link>
-            <View>
+            <div className="nav">
                 <Link href="/login" asChild>
                     <Pressable>
                         <Text>Login</Text>
@@ -22,7 +22,7 @@ const Headers = () => {
                         <Text>Register</Text>
                     </Pressable>
                 </Link>
-            </View>
+            </div>
         </div>
     );
 };
