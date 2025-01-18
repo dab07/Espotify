@@ -1,3 +1,4 @@
+import React from 'react';
 import '../css/App.css'
 const Blog = () => {
     console.log("Blog is rendered")

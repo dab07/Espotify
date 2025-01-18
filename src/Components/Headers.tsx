@@ -1,27 +1,14 @@
-import { View, Text, Pressable } from 'react-native';
-import { Link } from 'expo-router';
-import '../css/App.css'
-
+import React from "react";
+import { Link } from "react-router-dom";
+import '../css/App.css';
 
 const Headers = () => {
     return (
         <div className="header">
-            <Link href="/" asChild>
-                <Pressable>
-                    <Text>myBlog</Text>
-                </Pressable>
-            </Link>
+            <Link to="/" className="logo">myBlog</Link>
             <div className="nav">
-                <Link href="/login" asChild>
-                    <Pressable>
-                        <Text>Login</Text>
-                    </Pressable>
-                </Link>
-                <Link href="/register" asChild>
-                    <Pressable>
-                        <Text>Register</Text>
-                    </Pressable>
-                </Link>
+                <Link to="/login" className="login">Login</Link>
+                <Link to="/Signup" className="Signup">Signup</Link>
             </div>
         </div>
     );
